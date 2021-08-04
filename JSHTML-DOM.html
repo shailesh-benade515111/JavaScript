@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> JavaScript Object</title>
+</head>
+
+<body>
+    <p>Programming is Fun <b> programming with Sachin</b></p>
+    <p>This is an Example to find HTML Tag Name</p>
+    <h1>This is an Example to find HTML Tag Name</h1>
+
+    <div id="java">
+        <p>Finding HTML </p>
+        <p>example of getElementsByTagName</p>
+    </div>
+    <p id="Example"></p>
+    <p id="example2"></p>
+    <p id="demo"></p>
+
+    <p id="Examples12"></p>
+    <p id="pass"> lets check what happens</p>
+    <script>
+        const element = document.getElementsByTagName("p");
+        document.getElementById("Example").innerHTML = 'The letter present in the first paragraph (index 0) is ' + element[0].innerHTML;
+
+        const element1 = document.getElementsByTagName("h1");
+        document.getElementById("example2").innerHTML = 'The letter present in the first paragraph (index 0) is ' + element1[0].innerHTML;
+
+        const a = document.getElementById("java");
+        const y = a.getElementsByTagName("p");
+
+        document.getElementById("demo").innerHTML =
+            "This 1st paragraph inside java id tag" + y[0].innerHTML;
+
+        document.getElementById("pass").innerHTML = "Programming with Sachin";
+        document.write(Date());
+        document.write("JavaScript")
+    </script>
+</body>
+
+</html>

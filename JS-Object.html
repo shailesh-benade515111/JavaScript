@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> JavaScript Object</title>
+</head>
+<p id="objects"></p>
+<p id="type"></p>
+<p id="model"></p>
+<p id="color"></p>
+<p id="currency"></p>
+<p id="currency1"></p>
+<p id="emp"></p>
+<script>
+    // let car = "Range rover";
+    // document.getElementById("objects").innerHTML = car;
+
+    //create the object
+    const car = {
+        name: "Range_Rover",
+        type: "Manual",
+        model: "2021",
+        color: "White"
+    }
+
+    document.getElementById("objects").innerHTML = "The name of the car is " + car.name;
+    document.getElementById("type").innerHTML = "The type of the car is " + car.type;
+    document.getElementById("model").innerHTML = "The model of the car is " + car.model;
+    document.getElementById("color").innerHTML = "The color of the car is " + car.color;
+
+    const currency = {
+        India: "Indian Rupees",
+        USE: "US Dollar",
+        London: "Ponds",
+        Japan: "Yen"
+    }
+
+    document.getElementById("currency").innerHTML = "Currency of India " + currency.India;
+    document.getElementById("currency1").innerHTML = "Currency of Japan " + currency["Japan"];
+
+    const person = {
+        firstName: "Shailesh",
+        lastName: "Benade",
+        id: 123456,
+        city: "Kolhapur",
+        Pin: 416116,
+        fullName: function() {
+            return this.firstName + " " + this.lastName;
+        }
+    };
+    document.getElementById("emp").innerHTML = "Employee Name is " + person.fullName();
+</script>
+
+</html>

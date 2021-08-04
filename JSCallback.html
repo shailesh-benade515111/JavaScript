@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript CallBack</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+        function callback(parameter) {
+            document.getElementById("demo").innerHTML = parameter;
+        }
+
+        function callback2(parameter) {
+            document.getElementById("demo2").innerHTML = parameter;
+        }
+
+        function coffee() {
+            callback("Hello");
+        }
+
+        function object() {
+            callback("GoodMorning");
+        }
+
+        function training() {
+            callback2("Training is going on")
+        }
+        coffee();
+        object();
+        training();
+        //callback is technique /mechnism
+        //pass a parameter/argument to the function
+        //allows a funtion to call another funtion 
+        //A callback function can run after another funtion has finished
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>JS Functions</h2>
+    <p id="demo"></p>
+    <p id="celcius"></p>
+    <p id="fahern"></p>
+    <script>
+        function getcube(number) {
+            window.alert(number * number * number);
+        }
+        function getsqaure(number) {
+            window.alert(number * number);
+        }
+        function getsum(number) {
+            window.alert(number + number);
+        }
+        function getcsub(number) {
+            window.alert(number - 2);
+        }
+
+        let demon = myaddition(4, 3);
+        document.getElementById("demo").innerHTML = demon;
+        function myaddition(number_one, number_two) {
+            return number_one * number_two;
+        }
+
+        function tempreture(fahrenhit) {
+            return (5 / 9) * (fahrenhit - 32);
+        }
+        document.getElementById("celcius").innerHTML = tempreture(100);
+
+        // document.write("_______________________");
+        // function toCelcius(fahrenheit) {
+        //     return (5 / 9) * (fahrenheit - 32);
+        // }
+
+        // let tempreture = toCelcius(77);
+        // let display = "The temperature is" + tempreture + "Celcius";
+
+        // document.getElementById("fahern").innerHTML = display;
+    </script>
+    <form>
+        <input type="button" value="cube" onclick="getcube(2)" />
+        <input type="button" value="square" onclick="getsqaure(2)" />
+        <input type="button" value="sum" onclick="getsum(2)" />
+        <input type="button" value="sub" onclick="getcsub(2)" />
+    </form>
+</body>
+
+</html>

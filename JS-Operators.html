@@ -1,0 +1,44 @@
+<DOCTYPE html>
+    <html>
+
+    <body>
+        <h2>JS Operator</h2>
+        <p id="operator"></p>
+        <p id="instances"></p>
+        <p id =""></p>
+        <script>
+            let x = 100;
+            let y = 200;
+            let res = x + y;
+            document.getElementById("operator").innerHTML = "Addition is " + res;
+            console.log("Addition is " + res);
+
+            //JS operator
+            // Arithmatic Operator
+            // +,-,*,/,%,**,++,--
+
+            let number_one = 7;
+            let number_two = 9;
+            let add = number_one + number_two;
+            let sub = number_one - number_two;
+            let mul = number_one * number_two;
+            let div = number_one / number_two;
+            let mod = number_one % number_two;
+            let expo = number_one ** number_two;
+            let postadd = number_one++;
+            let preadd = ++number_one;
+            let predecre = --number_one;
+            let postdecre = number_one--;
+            document.getElementById("instances").innerHTML = "JavaScript Operator" +
+                add + "<br/>" + sub + "<br/>" + mul + "<br/>" + div + "<br/>" + mod + "<br/>" + expo + "<br/>" + postadd + "<br/>" + preadd + "<br/>" + predecre + "<br/>" + postdecre;
+
+            let value = 10;
+            let green = 20;
+            let result = (value == green && value == green);
+            document.write(result);
+
+            //practice Assignment Operator
+        </script>
+    </body>
+
+    </html>

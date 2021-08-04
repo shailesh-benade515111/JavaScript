@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Some more examples
+    </title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="example"></p>
+    <script>
+        function result(param) {
+            document.getElementById("demo").innerHTML = param;
+        }
+
+        function calculator(num1, num2) {
+            let sum = num1 + num2;
+            return sum;
+        }
+        let total = calculator(100, 200);
+        result(total); //callback invoked through the funtion calculator
+        //where entire funtion is passes as a argument.
+
+        function display(arg) {
+            document.getElementById("example").innerHTML = arg;
+        }
+
+        function res(number, number2, something) {
+            let add = number + number2;
+            something(add);
+        }
+
+        res(10, 10, display); //values to the argument passes
+        //where in 10 and 10 are num and num2 for funtion result.
+        //further more,display is a call back arg which is passed as a parameter to display function.
+    </script>
+</body>
+
+</html>

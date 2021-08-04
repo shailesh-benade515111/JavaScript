@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2> JS Loops</h2>
+    <p>for loop <br> while <br> do-while loop <br> for-in</p>
+
+    <script>
+        for (number = 10; number < 15; number++) {
+            document.write(number + "<br/>");
+        }
+        document.write("______________________________<br/>");
+        for (var _number1 = 10; _number1 < 15; _number1++) {
+            document.write(_number1 + "<br/>");
+        }
+        document.write("______________________________<br/>");
+        for (let _number = 10; _number < 15; _number++) {
+            document.write(_number + "<br/>");
+        }
+
+        document.write("While loop example<br/>");
+        var expression = 11;
+        while (expression <= 15) {
+            document.write(expression + "<br/>");
+            expression++;
+        }
+
+        document.write("do-while loop <br>")
+        let rupees = 100;
+
+        do {
+            document.write(rupees + "<br/>");
+            rupees++;
+        } while (rupees <= 125);
+    </script>
+</body>
+
+</html>

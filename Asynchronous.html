@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Asynchronous CallBack mechanism</title>
+</head>
+<h2>funtion running in parallel with each other funtions are called asynchronous.</h2>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <script>
+        setTimeout(serverDisplay, 7000);
+
+        function serverDisplay() {
+            document.getElementById("demo").innerHTML = "Hello my name is server";
+        }
+
+        setTimeout(function() {
+            myfuntion("hello from 2nd funtion");
+        }, 3000);
+
+        function myfuntion(param) {
+            document.getElementById("demo2").innerHTML = param;
+        }
+        //serverDisplay();
+    </script>
+</body>
+
+</html>
